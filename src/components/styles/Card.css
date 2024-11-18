@@ -1,9 +1,10 @@
+/* General Card Styles */
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 20px;
@@ -11,160 +12,159 @@
     width: 100%;
     max-width: 380px; /* Slightly narrower to fit more cards on the screen */
     box-sizing: border-box;
-}
-
-.card-header {
+  }
+  
+  .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-    gap: 10px; /* Add spacing between elements */
-}
-
-.card-id {
+    gap: 10px;
+  }
+  
+  .card-id {
     color: #707070;
     font-size: 14px;
-    flex: 1 1 100%;
     text-align: center;
     margin-bottom: 5px;
-}
-
-.card-user {
+    flex: 1 1 100%;
+  }
+  
+  .card-user {
     position: relative;
-    margin-right: 8px;
-}
-
-.card-user-icon {
+  }
+  
+  .card-user-icon {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 24px; /* Slightly larger for better visibility */
     width: 24px;
     background-color: #c16d24;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 12px;
     font-weight: 500;
     border-radius: 50%;
-}
-
-.active-user,
-.inactive-user {
+  }
+  
+  .active-user,
+  .inactive-user {
     position: absolute;
     height: 10px;
     width: 10px;
     bottom: -4px;
     right: -4px;
     border-radius: 50%;
-    border: 2px solid #FFFFFF;
-}
-
-.active-user {
+    border: 2px solid #ffffff;
+  }
+  
+  .active-user {
     background-color: green;
-}
-
-.inactive-user {
-    background-color: #E5E5E5;
-}
-
-.card-body {
+  }
+  
+  .inactive-user {
+    background-color: #e5e5e5;
+  }
+  
+  .card-body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
-    gap: 10px; /* Add spacing between image and text */
-}
-
-.card-body img {
+    gap: 10px;
+  }
+  
+  .card-body img {
     height: 20px;
-    width: 15%; /* Ensure the image adjusts dynamically */
-    margin-top: 1px;
-}
-
-.card-body span {
-    width: 80%; 
+    width: 15%; /* Adjust the image size */
+  }
+  
+  .card-body span {
+    width: 80%;
     font-size: 14px;
     font-weight: 500;
     text-align: left;
-}
-
-.card-footer {
+  }
+  
+  .card-footer {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px; /* Better spacing */
-}
-
-.card-footer-priority {
+    gap: 10px;
+  }
+  
+  .card-footer-priority {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 25px;
     width: 25px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-radius: 4px;
     margin-right: 10px;
-}
-
-.card-footer-priority img {
+  }
+  
+  .card-footer-priority img {
     height: 15px;
-}
-
-.card-footer-tags {
+  }
+  
+  .card-footer-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     width: 100%;
     margin-top: 10px;
-}
-
-/* Medium screens */
-@media (max-width: 768px) {
+  }
+  
+  /* Medium screens */
+  @media (max-width: 768px) {
     .card {
-        width: 90%;
-        max-width: none; /* Allow cards to expand to 90% of the screen width */
+      width: 90%;
+      max-width: none; /* Allow cards to expand to 90% of the screen width */
     }
-    
+  
     .card-header,
     .card-body {
-        flex-direction: column;
-        align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
     }
-    
+  
     .card-body img {
-        width: 25%; /* Slightly larger image for mobile */
+      width: 25%; /* Slightly larger image for mobile */
     }
-
+  
     .card-footer {
-        flex-direction: column;
-        align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
     }
-}
-
-/* Small screens */
-@media (max-width: 480px) {
+  }
+  
+  /* Small screens */
+  @media (max-width: 480px) {
     .card-header {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
     }
-
+  
     .card-id {
-        font-size: 12px;
-        text-align: center;
+      font-size: 12px;
+      text-align: center;
     }
-
+  
     .card-body span {
-        font-size: 12px;
+      font-size: 12px;
     }
-
+  
     .card-footer-priority {
-        height: 20px;
-        width: 20px;
+      height: 20px;
+      width: 20px;
     }
-}
+  }
+  
