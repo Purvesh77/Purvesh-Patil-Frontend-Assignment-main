@@ -44,5 +44,5 @@ The API returns ticket data to populate the Kanban board.
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Purvesh77/Purvesh-Patil-Frontend-Assignment-main
    cd quicksell-kanban
